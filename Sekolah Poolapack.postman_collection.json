@@ -1,0 +1,348 @@
+{
+	"info": {
+		"_postman_id": "15e13f43-15af-4003-8a50-efa65dd6c742",
+		"name": "Sekolah Poolapack",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29237704"
+	},
+	"item": [
+		{
+			"name": "all-kota",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/kota",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"kota"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all-kecamatan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/kecamatan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"kecamatan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all-siswa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/siswa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"siswa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tambah-kota",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama_kota\" : \"Kota Baru 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/kota/tambah-kota",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"kota",
+						"tambah-kota"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tambah-kecamatan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama_kecamatan\" : \"Kecamatan Baru 2\",\r\n    \"id_kota_kabupaten\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/kecamatan/tambah-kecamatan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"kecamatan",
+						"tambah-kecamatan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tambah-siswa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama_siswa\": \"Fathur\",\r\n    \"id_kecamatan\": 1,\r\n    \"alamat_siswa\": \"Alamat Siswa\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/siswa/tambah-siswa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"siswa",
+						"tambah-siswa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-kota",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/kota/delete-kota/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"kota",
+						"delete-kota",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-kecamatan",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/kecamatan/delete-kecamatan/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"kecamatan",
+						"delete-kecamatan",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-siswa",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/siswa/delete-siswa/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"siswa",
+						"delete-siswa",
+						"1"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-kota",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama_kota\" : \"Kota Baru\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/kota/update-kota/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"kota",
+						"update-kota",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-kecamatan",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama_kecamatan\" : \"Kecamatan Baru 3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/kecamatan/update-kecamatan/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"kecamatan",
+						"update-kecamatan",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-siswa",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama_siswa\": \"Nama diubah\",\r\n    \"id_kecamatan\": 1,\r\n    \"alamat_siswa\": \"Alamat diubah\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/siswa/update-siswa/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"siswa",
+						"update-siswa",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kecamatan-by-kota",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/kecamatan/kota/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"kecamatan",
+						"kota",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
