@@ -10,7 +10,7 @@
 - [Jalankan Query Basis Data](#instalasi-basis-data)
 - [Instalasi Frontend](#instalasi-frontend)
 - [Penggunaan](#penggunaan)
-- [Teknologi yang Digunakan](#teknologi-yang-digunakan)\
+- [Teknologi yang Digunakan](#teknologi-yang-digunakan)
 
 ## Fitur
 
